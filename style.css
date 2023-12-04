@@ -1,0 +1,30 @@
+:root {                                 /*   Variables   */
+    --background-base: #000;
+    --color-base: rgb(255,255,255);
+}
+
+* {                             /*  Estandares de la página */
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-base);
+    color: var(--color-base);
+}
+
+.section-container {                /*   Seccion   */
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    max-width: calc( 83.33333333333334% - 6rem );
+    margin: auto;
+    padding: 3.5rem 0;
+}
+.section-text h3 {
+    font-size: 3rem;
+    font-weight: 900;
+}
+.section-text p {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
