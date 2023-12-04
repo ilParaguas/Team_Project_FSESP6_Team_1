@@ -20,6 +20,10 @@
     margin: auto;
     padding: 3.5rem 0;
 }
+.reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
 .section-text h3 {
     font-size: 3rem;
     font-weight: 900;
