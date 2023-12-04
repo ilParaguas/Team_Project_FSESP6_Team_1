@@ -20,8 +20,7 @@
     margin: auto;
     padding: 3.5rem 0;
 }
-.reverse {
-    display: flex;
+.reverse {                          /*   Seccion reversa   */
     flex-direction: row-reverse;
 }
 .section-text h3 {
