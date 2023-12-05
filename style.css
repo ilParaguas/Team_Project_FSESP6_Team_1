@@ -10,6 +10,14 @@
     color: var(--color-base);
 }
 
+#promo {
+    background: radial-gradient( 51.39% 511.66% at 47.68% -217.91%, #ff9900 0%, #e50914 17.27%, #0e1b4f 79.44%, #000413 100% );
+    margin: 0 74px;
+    padding: 22px;
+    box-shadow: 0px -8px 25px rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+}
+
 .section-container {                /*   Seccion   */
     position: relative;
     display: flex;
