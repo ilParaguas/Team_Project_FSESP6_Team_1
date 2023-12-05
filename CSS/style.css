@@ -1,0 +1,27 @@
+@import url(./font.css);
+
+@import url(./header.css);
+
+@import url(./promo.css);
+
+@import url(./section.css);
+
+@import url(./faq.css);
+
+@import url(./footer.css);
+
+:root {                                 /*   Variables   */
+    --background-base: #000;
+    --color-base: rgb(255,255,255);
+}
+
+* {                             /*  Estandares de la página */
+    margin: 0;
+    padding: 0;
+
+    background-color: var(--background-base);
+    color: var(--color-base);
+
+    font-family: "Netflix Sans",Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+}
+
