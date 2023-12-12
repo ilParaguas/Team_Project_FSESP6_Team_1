@@ -1,32 +1,117 @@
-:root {                                 /*   Variables   */
+:root {
+    /*   Variables   */
     --background-base: #000;
-    --color-base: rgb(255,255,255);
+    --color-base: rgb(255, 255, 255);
+    --netflix-color:rgb(225, 16, 16);
+    --netflix-dark-color:rgb(192, 7, 7);
 }
 
-* {                             /*  Estandares de la página */
+* {
+    /*  Estandares de la página */
     margin: 0;
     padding: 0;
     background-color: var(--background-base);
     color: var(--color-base);
 }
 
-.section-container {                /*   Seccion   */
+.header-bg {
+    height: 90vh; 
+    width: 100%;
+    background: url('./media_netflix_es/cartelera_header.jpg') center;
+    background-size: cover;
+}
+.header-bg,.header-shadow,.nav-bar,.logo,.nav-right,nav,nav svg{
+    background-color: rgba(0, 0, 0, 0);
+}
+.header-shadow{
+    background-image: radial-gradient(rgba(11, 11, 11, 0.34) 5%, rgba(0, 0, 0, 0.73) 80%);
+    height: 100%;
+}
+nav{
+    padding: 1.5rem 10rem;
+}
+.nav-bar{
+    display: flex;
+}
+.nav-right, .logo, .nav-language,.log-in/*div:has(> .nav-language)*/{
+    display: inline-block;
+}
+.logo svg{
+    height: 2rem;
+    fill: var(--netflix-color);
+}
+.nav-right{
+    margin-left: auto;
+}
+
+.nav-language{
+    border-radius: 4px;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+}
+.nav-translator{
+    top: 6px;
+    left: 7px;
+    height: 0.8rem;
+    position:absolute;
+}
+.nav-language-select{
+    background-color: #11111100;
+    padding: 0.3rem 1.5rem;
+    border: 1px solid gray;
+    border-radius: 4px;
+    width: 100%;
+    text-align: center;
+    appearance: none;
+    z-index: 1;
+    position: relative;
+}
+.nav-language-select:focus{
+    outline: 2px solid white;
+    outline-offset: 2px;
+}
+.nav-down-arrow{
+    margin-bottom: -4px;
+    position:absolute;
+    top: 6px;
+    right: 7px;
+}
+.log-in{
+    background-color: var(--netflix-color);
+    padding: 0.3rem;
+    border: 1px solid var(--netflix-color);
+    border-radius: 4px;
+    margin-left: 15px;
+}
+.log-in:hover{
+    background-color: var(--netflix-dark-color);
+    transition: 0.5s;
+}
+
+
+
+.section-container {
+    /*   Seccion   */
     position: relative;
     display: flex;
     flex-direction: row;
     align-items: center;
 
-    max-width: calc( 83.33333333333334% - 6rem );
+    max-width: calc(83.33333333333334% - 6rem);
     margin: auto;
     padding: 3.5rem 0;
 }
-.reverse {                          /*   Seccion reversa   */
+
+.reverse {
+    /*   Seccion reversa   */
     flex-direction: row-reverse;
 }
+
 .section-text h3 {
     font-size: 3rem;
     font-weight: 900;
 }
+
 .section-text p {
     font-size: 1.5rem;
     font-weight: 400;
