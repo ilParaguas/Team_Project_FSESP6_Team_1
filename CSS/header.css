@@ -1,25 +1,14 @@
 :root {
     /*   Variables   */
-    --background-base: #000;
-    --color-base: rgb(255, 255, 255);
     --netflix-color:rgb(225, 16, 16);
     --netflix-dark-color:rgb(192, 7, 7);
-}
-
-* {
-    /*  Estandares de la página */
-    margin: 0;
-    padding: 0;
-    background-color: var(--background-base);
-    color: var(--color-base);
 }
 
 .header-bg {
     height: 90vh; 
     width: 100%;
-    background: url('./media_netflix_es/cartelera_header.jpg') center;
+    background: url('./../media_netflix_es/cartelera_header.jpg') center;
     background-size: cover;
-    transform: scale(1);
 }
 .header-bg,.header-shadow,.nav-bar,.logo,.nav-right,nav,nav svg{
     background-color: rgba(0, 0, 0, 0);
@@ -93,33 +82,4 @@ svg.nav-translator{
 .log-in:hover{
     background-color: var(--netflix-dark-color);
     transition: 0.5s;
-}
-
-
-
-.section-container {
-    /*   Seccion   */
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-    max-width: calc(83.33333333333334% - 6rem);
-    margin: auto;
-    padding: 3.5rem 0;
-}
-
-.reverse {
-    /*   Seccion reversa   */
-    flex-direction: row-reverse;
-}
-
-.section-text h3 {
-    font-size: 3rem;
-    font-weight: 900;
-}
-
-.section-text p {
-    font-size: 1.5rem;
-    font-weight: 400;
 }
