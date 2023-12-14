@@ -19,6 +19,7 @@
     width: 100%;
     background: url('./media_netflix_es/cartelera_header.jpg') center;
     background-size: cover;
+    transform: scale(1);
 }
 .header-bg,.header-shadow,.nav-bar,.logo,.nav-right,nav,nav svg{
     background-color: rgba(0, 0, 0, 0);
@@ -32,12 +33,13 @@ nav{
 }
 .nav-bar{
     display: flex;
+    align-items: flex-end;
 }
 .nav-right, .logo, .nav-language,.log-in/*div:has(> .nav-language)*/{
     display: inline-block;
 }
 .logo svg{
-    height: 2rem;
+    height: 2.6rem;
     fill: var(--netflix-color);
 }
 .nav-right{
@@ -49,15 +51,16 @@ nav{
     background-color: rgb(0, 0, 0);
     position: relative;
 }
-.nav-translator{
-    top: 6px;
-    left: 7px;
-    height: 0.8rem;
+svg.nav-translator{
+    top: 0.4rem;
+    left: 0.7rem;
+    height: 1.1rem;
+    width: 1.1rem;
     position:absolute;
 }
 .nav-language-select{
     background-color: #11111100;
-    padding: 0.3rem 1.5rem;
+    padding: 0.4rem 2.2rem;
     border: 1px solid gray;
     border-radius: 4px;
     width: 100%;
@@ -65,23 +68,27 @@ nav{
     appearance: none;
     z-index: 1;
     position: relative;
+    font-size: 1.1rem;
 }
 .nav-language-select:focus{
     outline: 2px solid white;
     outline-offset: 2px;
 }
+.nav-language-select option{
+    background-color: white;
+}
 .nav-down-arrow{
-    margin-bottom: -4px;
     position:absolute;
-    top: 6px;
-    right: 7px;
+    top: 0.6rem;
+    right: 0.7rem;
 }
 .log-in{
     background-color: var(--netflix-color);
-    padding: 0.3rem;
+    padding: 0.4rem 0.8rem;
     border: 1px solid var(--netflix-color);
     border-radius: 4px;
-    margin-left: 15px;
+    margin-left: 1.5rem;
+    font-size: 1rem;
 }
 .log-in:hover{
     background-color: var(--netflix-dark-color);
