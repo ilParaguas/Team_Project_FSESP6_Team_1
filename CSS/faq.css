@@ -69,10 +69,13 @@
     max-height: 60rem;
     transition: max-height 0.3s ease;
 }
-
-.cross:active {
+.faq-input:checked~ a .cross{
     transform: rotate(-45deg)
 }
+
+/* .cross:active {
+    transform: rotate(-45deg)
+} */
 
 .text-membresia {
     font-size: 22px;
