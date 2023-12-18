@@ -1,0 +1,301 @@
+:root {
+    /*   Variables   */
+    --netflix-color: rgb(225, 16, 16);
+    --netflix-dark-color: rgb(192, 7, 7);
+    --transparent: rgb(0, 0, 0, 0);
+}
+
+header * {
+    background-color: var(--transparent);
+}
+
+.header-bg {
+    height: 43rem;
+    width: 100%;
+    background: url('./../media_netflix_es/cartelera_header.jpg') center;
+    background-size: cover;
+}
+
+.header-shadow {
+    background-image: radial-gradient(rgba(11, 11, 11, 0.34) 5%, rgba(0, 0, 0, 0.73) 80%);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+nav {
+    padding: 1.5rem 10rem;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.nav-right,
+.logo,
+.nav-language,
+.log-in {
+    display: inline-block;
+}
+
+.logo svg {
+    height: 2.6rem;
+    fill: var(--netflix-color);
+}
+
+.nav-right {
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-bottom: 0.2rem;
+}
+
+.nav-language {
+    border-radius: 4px;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+}
+
+.nav-translator {
+    top: 0.5rem;
+    left: 0.7rem;
+    height: 1.1rem;
+    width: 1.1rem;
+    position: absolute;
+}
+
+.nav-language-select {
+    background-color: #11111100;
+    padding: 0.2rem 2.5rem;
+    border: 1px solid gray;
+    border-radius: 4px;
+    width: 100%;
+    text-align: left;
+    appearance: none;
+    z-index: 1;
+    position: relative;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+}
+
+.nav-language-select:focus {
+    outline: 2px solid white;
+    outline-offset: 2px;
+}
+
+.nav-language-select option {
+    background-color: white;
+}
+
+.nav-down-arrow {
+    position: absolute;
+    top: 0.6rem;
+    right: 0.7rem;
+}
+
+.log-in {
+    background-color: var(--netflix-color);
+    padding: 0.3rem 0.8rem;
+    border-radius: 4px;
+    margin-left: 1.2rem;
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.log-in:hover {
+    background-color: var(--netflix-dark-color);
+    transition: 0.5s;
+}
+
+.header-banner {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: auto 5vw;
+}
+
+.header-title {
+    font-size: 3.2rem;
+    text-align: center;
+}
+
+.header-text {
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.header-register-text {
+    font-size: 1.4rem;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.header-register-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.email-div {
+    position: relative;
+    max-width: 25rem;
+    flex: 1 1 auto;
+    background-color: rgba(0, 0, 0, 0.604);
+}
+
+#header-email {
+    z-index: 1;
+    font-size: 1rem;
+    line-height: 1.7rem;
+    position: relative;
+    text-indent: 1rem;
+    padding-top: 1.2rem;
+    padding-bottom: 0.5rem;
+    border: 1px solid rgb(120, 119, 119);
+    border-radius: 4px;
+    width: 100%;
+    
+}
+
+#header-email:focus {
+    outline: 2px solid white;
+    outline-offset: 2px;
+}
+
+#email-lbl {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1rem;
+    line-height: 3.2rem;
+    font-weight: 400;
+    margin-left: 1rem;
+    color: rgb(246, 244, 244);
+    transition: 0.3s all ease;
+}
+
+#header-email:focus+label {
+    font-size: 0.8rem;
+    line-height: 2rem;
+}
+
+#header-send {
+    background-color: var(--netflix-color);
+    border: 0px;
+    border-radius: 4px;
+    font-size: 1.6rem;
+    font-weight: 500;
+
+    padding-left: 1.3rem;
+    padding-right: 1.5rem;
+}
+
+#header-send:hover {
+    background-color: var(--netflix-dark-color);
+    transition: 0.5s;
+}
+
+.register-right-arrow {
+    margin-bottom: -0.2rem;
+}
+
+@media(max-width: 1280px) {
+    nav {
+        padding: 1.5rem 2rem;
+    }
+}
+
+@media(max-width: 960px) {
+    .header-bg {
+        height: 32rem;
+    }
+
+    .logo svg {
+        height: 1.5rem;
+    }
+
+    .log-in {
+        margin-left: 0.3rem;
+    }
+
+    .header-banner {
+        gap: 1.5rem;
+    }
+
+    .header-title {
+        font-size: 2rem;
+    }
+
+    .header-text,
+    .header-register-text {
+        font-size: 1.1rem;
+    }
+}
+
+@media(max-width: 600px) {
+    .header-bg {
+        height: auto;
+    }
+
+    .header-shadow {
+        padding-bottom: 3rem;
+    }
+
+    nav {
+        padding: 1.5rem 1.5rem;
+    }
+
+    .nav-bar {
+        flex-wrap: wrap;
+    }
+
+    .nav-language-select {
+        font-size: 0;
+        padding: 0.2rem 2rem;
+    }
+
+    .nav-language-select option {
+        font-size: 1.1rem;
+    }
+
+    .header-register-form {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .email-div {
+        align-self: stretch;
+    }
+
+    #header-send {
+        width: auto;
+    }
+
+
+    #header-email {
+        line-height: 1.2rem;
+    }
+
+    #header-email:focus+label {
+        line-height: 1.5rem;
+    }
+    #header-send{
+        font-size: 1.1rem;
+        line-height: 3rem;
+        padding-right: 1rem;
+    }
+}
