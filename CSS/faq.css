@@ -63,6 +63,7 @@
 
 .faq-content p {
     margin: 2rem;
+    background-color: transparent;
 }
 
 .faq-input:checked~.faq-content {
@@ -72,10 +73,9 @@
 .faq-input:checked~ a .cross{
     transform: rotate(-45deg)
 }
-
-/* .cross:active {
-    transform: rotate(-45deg)
-} */
+.cross{
+    background-color: transparent;
+}
 
 .text-membresia {
     font-size: 22px;
