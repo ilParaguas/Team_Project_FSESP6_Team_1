@@ -21,6 +21,10 @@ header * {
     height: 100%;
     display: flex;
     flex-direction: column;
+    gap: 2rem;
+
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 nav {
@@ -30,13 +34,13 @@ nav {
 .nav-bar {
     display: flex;
     align-items: flex-end;
+    justify-content: space-between;
 }
 
 .nav-right,
 .logo,
 .nav-language,
-.log-in
-{
+.log-in {
     display: inline-block;
 }
 
@@ -46,7 +50,12 @@ nav {
 }
 
 .nav-right {
-    margin-left: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-bottom: 0.2rem;
 }
 
 .nav-language {
@@ -74,6 +83,7 @@ nav {
     z-index: 1;
     position: relative;
     font-size: 1.1rem;
+    line-height: 1.5rem;
 }
 
 .nav-language-select:focus {
@@ -81,7 +91,7 @@ nav {
     outline-offset: 2px;
 }
 
-.nav-language-select option{
+.nav-language-select option {
     background-color: white;
 }
 
@@ -95,7 +105,7 @@ nav {
     background-color: var(--netflix-color);
     padding: 0.3rem 0.8rem;
     border-radius: 4px;
-    margin-left: 1.5rem;
+    margin-left: 1.2rem;
     font-size: 1rem;
     text-decoration: none;
 }
@@ -135,44 +145,51 @@ nav {
 .header-register-form {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
+    gap: 0.5rem;
 }
 
-.form-div {
+.email-div {
     position: relative;
-    background-color: rgba(0, 0, 0, 0.467);
+    max-width: 25rem;
+    flex: 1 1 auto;
+    background-color: rgba(0, 0, 0, 0.604);
 }
 
 #header-email {
     z-index: 1;
     font-size: 1rem;
+    line-height: 1.7rem;
     position: relative;
-    padding-left: 1rem;
+    text-indent: 1rem;
     padding-top: 1.2rem;
     padding-bottom: 0.5rem;
-    border: 1px solid gray;
+    border: 1px solid rgb(120, 119, 119);
     border-radius: 4px;
-    width: 25rem;
+    width: 100%;
+    
 }
+
 #header-email:focus {
     outline: 2px solid white;
     outline-offset: 2px;
 }
+
 #email-lbl {
     position: absolute;
     left: 0;
+    top: 0;
     font-size: 1rem;
     line-height: 3.2rem;
     font-weight: 400;
     margin-left: 1rem;
-    color: rgb(195, 191, 191);
+    color: rgb(246, 244, 244);
     transition: 0.3s all ease;
-    
 }
-#header-email:focus+label{
+
+#header-email:focus+label {
     font-size: 0.8rem;
-    line-height: 1.5rem;
+    line-height: 2rem;
 }
 
 #header-send {
@@ -181,7 +198,7 @@ nav {
     border-radius: 4px;
     font-size: 1.6rem;
     font-weight: 500;
-    margin-left: 0.5rem;
+
     padding-left: 1.3rem;
     padding-right: 1.5rem;
 }
@@ -190,7 +207,95 @@ nav {
     background-color: var(--netflix-dark-color);
     transition: 0.5s;
 }
-.register-right-arrow{
-    margin-left: 0.5rem;
-    margin-bottom: -0.2rem ;
+
+.register-right-arrow {
+    margin-bottom: -0.2rem;
+}
+
+@media(max-width: 1280px) {
+    nav {
+        padding: 1.5rem 2rem;
+    }
+}
+
+@media(max-width: 960px) {
+    .header-bg {
+        height: 32rem;
+    }
+
+    .logo svg {
+        height: 1.5rem;
+    }
+
+    .log-in {
+        margin-left: 0.3rem;
+    }
+
+    .header-banner {
+        gap: 1.5rem;
+    }
+
+    .header-title {
+        font-size: 2rem;
+    }
+
+    .header-text,
+    .header-register-text {
+        font-size: 1.1rem;
+    }
+}
+
+@media(max-width: 600px) {
+    .header-bg {
+        height: auto;
+    }
+
+    .header-shadow {
+        padding-bottom: 3rem;
+    }
+
+    nav {
+        padding: 1.5rem 1.5rem;
+    }
+
+    .nav-bar {
+        flex-wrap: wrap;
+    }
+
+    .nav-language-select {
+        font-size: 0;
+        padding: 0.2rem 2rem;
+    }
+
+    .nav-language-select option {
+        font-size: 1.1rem;
+    }
+
+    .header-register-form {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .email-div {
+        align-self: stretch;
+    }
+
+    #header-send {
+        width: auto;
+    }
+
+
+    #header-email {
+        line-height: 1.2rem;
+    }
+
+    #header-email:focus+label {
+        line-height: 1.5rem;
+    }
+    #header-send{
+        font-size: 1.1rem;
+        line-height: 3rem;
+        padding-right: 1rem;
+    }
 }
