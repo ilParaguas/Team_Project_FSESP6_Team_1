@@ -1,3 +1,4 @@
+
 .Preguntas-Frecuentes {
     font-size: 50px;
     font-weight: bolder;
@@ -32,12 +33,12 @@
     display: none;
 }
 
-#preguntas:hover {
+.preguntas:hover {
     transition: 0.3s;
     filter: brightness(130%);
 }
 
-#preguntas {
+.preguntas {
     text-decoration: none;
     color: white;
 }
@@ -55,7 +56,6 @@
 
 .faq-content {
     background-color: #333333;
-    ;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease, padding 2s ease;
@@ -70,7 +70,7 @@
     transition: max-height 0.3s ease;
 }
 
-#cross:active {
+.cross:active {
     transform: rotate(-45deg)
 }
 
