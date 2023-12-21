@@ -54,6 +54,7 @@ p {
     width: fit-content;
 
     font-weight: 500;
+    font-size: 1em;
     background: none;
     color: #448ef4;
     text-decoration: underline;
@@ -61,8 +62,6 @@ p {
     border: none;
 
     overflow: visible;
-    padding-block: 1px;
-    padding-inline: 6px;
 }
 #promo-mas-info svg {
     overflow: hidden;
