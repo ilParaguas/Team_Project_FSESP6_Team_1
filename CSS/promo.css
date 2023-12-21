@@ -4,6 +4,7 @@ p {
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+    background: none;
 }
 
 #promo {
@@ -18,8 +19,16 @@ p {
     border-radius: 4px;
 }
 
+#promo-svg {
+    background: none;
+}
+#promo-svg svg {
+    background: none;
+}
+
 #promo-text {
     padding-left: 32px;
+    background: none;
 }
 #promo-text :first-child {
     font-size: 20px;
@@ -33,6 +42,7 @@ p {
     margin-top: 4px;
     margin-bottom: 8px;
 }
+
 #promo-mas-info {
     cursor: pointer;
 
@@ -44,6 +54,7 @@ p {
     width: fit-content;
 
     font-weight: 500;
+    font-size: 1em;
     background: none;
     color: #448ef4;
     text-decoration: underline;
@@ -51,10 +62,10 @@ p {
     border: none;
 
     overflow: visible;
-    padding-block: 1px;
-    padding-inline: 6px;
 }
 #promo-mas-info svg {
     overflow: hidden;
+    background: none;
+    fill: #448ef4;
     color: #448ef4;
 }
