@@ -1,7 +1,71 @@
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    background: none;
+}
+
 #promo {
+    display: flex;
+    position: relative;
+    justify-content: center;
+
     background: radial-gradient( 51.39% 511.66% at 47.68% -217.91%, #ff9900 0%, #e50914 17.27%, #0e1b4f 79.44%, #000413 100% );
     margin: 0 74px;
     padding: 22px;
     box-shadow: 0px -8px 25px rgba(0, 0, 0, 0.5);
     border-radius: 4px;
+}
+
+#promo-svg {
+    background: none;
+}
+#promo-svg svg {
+    background: none;
+}
+
+#promo-text {
+    padding-left: 32px;
+    background: none;
+}
+#promo-text :first-child {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    margin: 0;
+}
+#promo-text :nth-child(2) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 4px;
+    margin-bottom: 8px;
+}
+
+#promo-mas-info {
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+
+    font-weight: 500;
+    font-size: 1em;
+    background: none;
+    color: #448ef4;
+    text-decoration: underline;
+    padding: 0;
+    border: none;
+
+    overflow: visible;
+}
+#promo-mas-info svg {
+    overflow: hidden;
+    background: none;
+    fill: #448ef4;
+    color: #448ef4;
 }
