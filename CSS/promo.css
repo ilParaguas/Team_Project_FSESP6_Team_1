@@ -71,6 +71,13 @@ p {
     color: #448ef4;
 }
 
+@media (max-width: 960px) {
+
+    #promo {
+        margin-top: 0px;
+    }
+}
+
 @media (max-width: 655px) {
 
     #promo {
