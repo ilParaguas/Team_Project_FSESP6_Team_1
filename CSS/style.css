@@ -10,18 +10,30 @@
 
 @import url(./footer.css);
 
-:root {                                 /*   Variables   */
-    --background-base: #000;
-    --color-base: rgb(255,255,255);
+:root {
+  --background-base: #000;
+  --color-base: rgb(255, 255, 255);
 }
 
-* {                             /*  Estandares de la página */
-    margin: 0;
-    padding: 0;
+head {
+  display: none;
+}
 
+* {
+  margin: 0;
+  padding:0;
+
+  color: var(--color-base);
+
+  font-family:
+    "Netflix Sans",
+    Helvetica Neue,
+    Segoe UI,
+    Roboto,
+    Ubuntu,
+    sans-serif;
+}
+
+body {
     background-color: var(--background-base);
-    color: var(--color-base);
-
-    font-family: "Netflix Sans",Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
 }
-

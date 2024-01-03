@@ -278,6 +278,7 @@ nav {
     }
 
     .email-div {
+        max-width: none;
         align-self: stretch;
     }
 
