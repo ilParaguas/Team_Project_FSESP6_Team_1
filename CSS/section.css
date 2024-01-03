@@ -1,9 +1,9 @@
 /*Css FcoJavier*/
 
-div {
+.section div {
   display: block;
 }
-p {
+.section p {
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
@@ -71,7 +71,8 @@ p {
   /*overflow-clip-margin: content-box;
     overflow: clip;*/
 }
-img {
+.tv1,
+.tv2 {
   overflow-clip-margin: content-box;
   overflow: clip;
 }
@@ -87,17 +88,17 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.video2{
-    z-index: -1;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    max-width: 63%;
-    max-height: 47%;
-    position: absolute;
-    top: 34%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.video2 {
+  z-index: -1;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  max-width: 63%;
+  max-height: 47%;
+  position: absolute;
+  top: 34%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 audio,
 canvas,
