@@ -10,22 +10,27 @@
 
 @import url(./footer.css);
 
-:root {                                
-    --background-base: #000;
-    --color-base: rgb(255,255,255);
+:root {
+  --background-base: #000;
+  --color-base: rgb(255, 255, 255);
 }
 
-head{
-    display:none;
+head {
+  display: none;
 }
 
-body {                             
-    margin: 8px;
-    display: block;
+body {
+  margin: 8px;
+  display: block;
 
-    background-color: var(--background-base);
-    color: var(--color-base);
+  background-color: var(--background-base);
+  color: var(--color-base);
 
-    font-family: "Netflix Sans",Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+  font-family:
+    "Netflix Sans",
+    Helvetica Neue,
+    Segoe UI,
+    Roboto,
+    Ubuntu,
+    sans-serif;
 }
-
