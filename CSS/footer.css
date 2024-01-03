@@ -1,79 +1,77 @@
-.footer-container{
-margin:3rem;
-max-width: 100% ;
-margin-top: 4rem;
-margin-bottom: 4rem;
-padding-left: 4rem;
-padding-right: 2rem;
-}
- 
-.preguntas-container{
-color:#ffffffb3;
-font-size: 1rem;
-font-weight: 450;
-margin: 10px;
-display: inline-flex;
-flex-wrap: wrap;
-width:auto;
-padding-right: 10px
-;
+.footer-container {
+  margin: 3rem;
+  max-width: 100%;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  padding-left: 4rem;
+  padding-right: 2rem;
 }
 
-.container-lista-footer{
-display: grid;
-margin: 0;
-width:95%;
-padding-bottom: 30px;
-grid-template-columns: repeat(4, 1fr);
+.preguntas-container {
+  color: #ffffffb3;
+  font-size: 1rem;
+  font-weight: 450;
+  margin: 10px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: auto;
+  padding-right: 10px;
 }
 
-.container-lista-footer li{
-margin-top: 5%;
-margin-left: 0.75rem;
-display: grid;
+.container-lista-footer {
+  display: grid;
+  margin: 0;
+  width: 95%;
+  padding-bottom: 30px;
+  grid-template-columns: repeat(4, 1fr);
 }
 
-.container-lista-footer li a{
-color:#ffffffb3;
-font-size: 14.4px;
-font-weight: 400;
+.container-lista-footer li {
+  margin-top: 5%;
+  margin-left: 0.75rem;
+  display: grid;
+}
+
+.container-lista-footer li a {
+  color: #ffffffb3;
+  font-size: 14.4px;
+  font-weight: 400;
 }
 
 /* --------------- */
-.languages{
-
-margin-top: 0;
-margin-left: 1rem;
-display: inline-flex;
-padding:1px;
-padding-right: 5px;
-border: 1px solid rgba(109, 109, 109, 0.7);
-border-radius: 3px;
-gap: 8px
+.languages {
+  margin-top: 0;
+  margin-left: 1rem;
+  display: inline-flex;
+  padding: 1px;
+  padding-right: 5px;
+  border: 3px solid rgba(109, 109, 109, 0.7);
+  border-radius: 3px;
+  gap: 8px;
 }
 
-
-#select-languages{
-    border: 0;
-    margin: 1px;
-    font-size: large;
-    transform: scale(0.95);
-    font-weight: 500;
+#select-languages {
+  border: 0;
+  margin: 1px;
+  font-size: large;
+  transform: scale(0.95);
+  font-weight: 500;
+  background-color: var(--background-base);
+  color: white;
 }
 
-.svg-img{
-    margin-left: 10px;
-    margin-top: 5px;
-    transform: scale(1);
+.svg-img {
+  margin-left: 10px;
+  margin-top: 5px;
+  transform: scale(1);
 }
 
 @media (max-width: 950px) {
-
-    .container-lista-footer{
-        display: grid;
-        margin: 0;
-        width:95%;
-        padding-bottom: 30px;
-        grid-template-columns: repeat(2, 1fr);
-        }
+  .container-lista-footer {
+    display: grid;
+    margin: 0;
+    width: 95%;
+    padding-bottom: 30px;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
