@@ -1,17 +1,44 @@
 /*media preguntas frecuentes*/
 
+@media (max-width: 1280px) {
+  .Preguntas-Frecuentes {
+    font-size: 20px;
+}
+
+.faq {
+    max-width: 100vw;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+  }
+  
+  .faq-listado {
+    max-width: 100vw;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 @media (max-width: 960px) {
 
-   .Preguntas-Frecuentes{
-        font-size: 18px;
+    .faq ,.faq-listado {
+        max-width: 100vw;
+        font-size: 20px;
     }
 
-  .faq-register-form {
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 1rem;
-    font-size: 18px;
-  }
+    p {
+        font-size: 10px;
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+    .faq-register-form {
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 1rem;
+        font-size: 16px;
+      }
 
   .email-div {
     max-width: none;
@@ -35,19 +62,6 @@
   }
 }
 
-@media (max-width: 1280px) {
-
-    .Preguntas-Frecuentes{
-        font-size: 18px;
-    }
-   .faq  {
-        width: 100vw;
-        margin-left: 20px;
-        margin-right: 20px;
-        font-size: 24px;
-    }
-
-}
 
 /* linea gris*/
 
@@ -67,7 +81,7 @@ hr {
 /*preguntas frecuentes*/
 
 .Preguntas-Frecuentes {
-  font-size: 65px;
+  font-size: 40px;
   font-weight: bolder;
   text-align: center;
   margin-bottom: 0;
@@ -81,18 +95,16 @@ hr {
 .faq {
   display: grid;
   gap: 1rem;
-  padding-block: 3rem;
+  padding-block: 2rem;
   justify-content: center;
-  margin-left: 40px;
-  margin-right: 40px;
-  font-size: 32px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 24px;
 }
 
 .faq-listado {
   display: grid;
   gap: 0.4rem;
-  margin-left: 20px;
-  margin-right: 20px;
   max-width: 80rem;
   list-style: none;
 }
@@ -116,7 +128,7 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-block: 2rem;
+  padding-block: 1.5rem;
   padding-inline: 3%;
   background-color: #333333;
   border-bottom: 4px solid #030303;
@@ -127,11 +139,10 @@ hr {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s ease, padding 2s ease;
-  font-size: 32px;
 }
 
 .faq-content p {
-  margin: 3rem;
+  margin: 2rem;
   background-color: transparent;
 }
 
@@ -150,7 +161,7 @@ hr {
 
 .text-membresia {
   text-align: center;
-  font-size: 30px;
+  font-size: 22px;
 }
 
 /*email and button */
