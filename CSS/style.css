@@ -10,14 +10,18 @@
 
 @import url(./footer.css);
 
-:root {                                 /*   Variables   */
+:root {                                
     --background-base: #000;
     --color-base: rgb(255,255,255);
 }
 
-* {                             /*  Estandares de la página */
-    margin: 0;
-    padding: 0;
+head{
+    display:none;
+}
+
+body {                             
+    margin: 8px;
+    display: block;
 
     background-color: var(--background-base);
     color: var(--color-base);
