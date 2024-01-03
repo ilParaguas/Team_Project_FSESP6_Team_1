@@ -8,11 +8,12 @@
     margin:auto;
     padding: 3.5rem 0;
 }
-.reverse {                          /*   Seccion reversa   */
-    flex-direction: row-reverse;
-    
-}
+.reverse {            /*   Seccion reversa   */        
+    flex-direction: row-reverse;    
+
+  }
 .section-text h3 {
+    width: 300px;
     font-size: 3rem;
     font-weight: 900;
 }
@@ -58,4 +59,24 @@ height:18%
    max-width: 4rem;
      margin: 10px;
 }
+
+@media (max-width: 950px) {
+
+
+.reverse { display: flex;
+    align-items: center;
+    flex-direction: column;
  
+}
+        
+.section-text h3 {
+    width:auto;
+        font-size: 1.8rem;
+        font-weight: 900;
+    }
+.section-text p {
+        font-size: 1rem;
+        font-weight: 400;
+    
+}
+}
