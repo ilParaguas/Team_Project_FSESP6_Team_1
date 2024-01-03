@@ -39,7 +39,7 @@ p{
     padding: 0;
     z-index: 1;
     width:100%;
-}
+}  
 .section-text h3, .reverse-section-text h3 {
     margin: 0;
     font-size: 2rem;
@@ -148,4 +148,62 @@ video{
     .section-box, .reverse-section-box{
         max-width: calc( 83.33333333333334% - 6rem );
     }
+
+.section-imagen-descargando{
+position:relative;
+left: 22%;
+top: -150px;
+display: flex;
+align-items: center;
+border: 2px solid rgba(128,128,128,0.7);
+box-shadow: 0 0 100px 0 rgb(0,0,0);
+border-radius: 0.75rem;
+padding: 2px;
+width: 55%;
+height:18% 
+}
+
+   
+.imagen-descarga-2 img{
+    margin: 4px;
+    width: 65px;
+    height: 90px;
+    
+}
+.section-text-descarga{
+    text-align: left;
+    justify-content: left;
+    padding: 1px;
+    margin-left: 10px;
+    width: 100%;
+
+}
+.section-text-descarga p{
+    color: rgb(53, 53, 226);
+}
+
+.section-imagen-load img{
+   max-width: 4rem;
+     margin: 10px;
+}
+
+@media (max-width: 960px) {
+
+
+.reverse { display: flex;
+    align-items: center;
+    flex-direction: column;
+ 
+}
+        
+.section-text h3 {
+    width:auto;
+        font-size: 1.8rem;
+        font-weight: 900;
+    }
+.section-text p {
+        font-size: 1rem;
+        font-weight: 400;
+    
+}
 }
