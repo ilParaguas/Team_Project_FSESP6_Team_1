@@ -19,9 +19,8 @@ head {
   display: none;
 }
 
-body {
-  margin: 8px;
-  display: block;
+* {
+  margin: 0;
 
   background-color: var(--background-base);
   color: var(--color-base);
