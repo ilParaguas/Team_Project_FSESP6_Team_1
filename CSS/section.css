@@ -8,7 +8,7 @@ p{
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
-.section-container {                /*   Seccion   */
+.section-container {                
     position: relative;
     display: flex;
     justify-content: center;
