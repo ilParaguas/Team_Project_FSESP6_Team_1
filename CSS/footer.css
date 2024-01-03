@@ -66,3 +66,14 @@ gap: 8px
     margin-top: 5px;
     transform: scale(1);
 }
+
+@media (max-width: 950px) {
+
+    .container-lista-footer{
+        display: grid;
+        margin: 0;
+        width:95%;
+        padding-bottom: 30px;
+        grid-template-columns: repeat(2, 1fr);
+        }
+}
