@@ -21,8 +21,8 @@ head {
 
 * {
   margin: 0;
+  padding:0;
 
-  background-color: var(--background-base);
   color: var(--color-base);
 
   font-family:
@@ -32,4 +32,8 @@ head {
     Roboto,
     Ubuntu,
     sans-serif;
+}
+
+body {
+    background-color: var(--background-base);
 }
