@@ -147,6 +147,7 @@ nav {
     flex-direction: row;
     justify-content: center;
     gap: 0.5rem;
+    margin-bottom: 50px;
 }
 
 .email-div {
@@ -242,6 +243,9 @@ nav {
     .header-text,
     .header-register-text {
         font-size: 1.1rem;
+    }
+    .header-register-form {
+        margin-bottom: 0px;
     }
 }
 

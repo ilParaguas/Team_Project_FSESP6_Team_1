@@ -188,14 +188,15 @@ video {
   max-width: calc(83.33333333333334% - 6rem);
   margin: auto;
   padding: 3.5rem 0;
+  box-sizing: border-box;
 }
 
-.section-text h3 {
+.section-text-paul h3 {
   width: 100%;
   font-size: 3rem;
   font-weight: 900;
 }
-.section-text p {
+.section-text-paul p {
   font-size: 1.5rem;
   font-weight: 400;
 }
@@ -212,15 +213,15 @@ video {
   padding: 2px;
   width: 55%;
   height: 18%;
+  background-color: black;
+  z-index: 1;
+  min-width: 50%;
 }
 
 .imagen-descarga-2 img {
   margin: 4px;
   width: 65px;
   height: 90px;
-}
-.section-imagen-descargando {
-  background-color: black;
 }
 .section-text-descarga {
   text-align: left;
@@ -231,11 +232,27 @@ video {
 }
 .section-text-descarga p {
   color: rgb(53, 53, 226);
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.section-imagen-load{
+  flex-grow: 0;
+  flex-shrink: 0;
 }
 
 .section-imagen-load img {
-  max-width: 4rem;
-  margin: 10px;
+  max-width: 100%;
+  overflow: clip;
+}
+
+.imagen-descarga-imagen {
+  max-width: 100%;
+}
+
+.imagen-descarga-2 {
+  flex-grow: 0;
+  flex-shrink: 0;
 }
 
 .reverse {
@@ -249,12 +266,12 @@ video {
     flex-direction: column;
   }
 
-  .section-text h3 {
+  .section-text-paul h3 {
     width: auto;
     font-size: 1.8rem;
     font-weight: 900;
   }
-  .section-text p {
+  .section-text-paul p {
     font-size: 1rem;
     font-weight: 400;
   }
