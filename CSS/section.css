@@ -190,6 +190,7 @@
   height: 18%;
   background-color: black;
   z-index: 1;
+  min-width: 18rem;
 }
 
 .imagen-descarga-2 img {
